@@ -1,7 +1,9 @@
-contact: Add your name here
-email: Add your email address here
-created: Add the date you started the experiment here (YYYY-MM-DD)
+contact: Hakase Hayashida
+email: hakase.hayashida@utas.edu.au
+created: 2021-09-07
 description: |-
+  This configuration is created for Paul Spence.
+  This is the first test run with OM2-BGC-025.
   0.25 degree ACCESS-OM2 global model configuration under the RYF9091 Repeat
   Year Forcing strategy outlined by Stewart et al. (2020), 
   https://doi.org/10.1016/j.ocemod.2019.101557.
@@ -30,3 +32,4 @@ keywords:
   - access-om2-025
   - jra55-do-v1.4.0
   - ryf
+  - bgc

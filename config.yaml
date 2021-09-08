@@ -9,9 +9,10 @@
 # shortpath: /scratch/v45
 
 queue: normal
-walltime: 0:10:00
+walltime: 0:03:00
 jobname: 025deg_jra55_ryf
-
+storage:
+        gdata: v45
 # Model configuration
 name: common
 model: access-om2
@@ -27,14 +28,20 @@ submodels:
 
     - name: ocean
       model: mom
-      exe: /g/data/ik11/inputs/access-om2/bin/fms_ACCESS-OM_af3a94d_libaccessom2_a227a61.x
-      input: /g/data/ik11/inputs/access-om2/input_20201102/mom_025deg
+      exe: /home/581/hh0162/scratch/access-om2-iamip2/src/mom/exec/nci/ACCESS-OM-BGC/fms_ACCESS-OM-BGC.x
+      #/g/data/v45/hh0162/projects/icebgc/prep_omip2/input_om2-bgc/025deg-paul/fms_ACCESS-OM-BGC.x
+      input: 
+      - /g/data/v45/hh0162/projects/icebgc/prep_omip2/input_om2-bgc/025deg-paul
+      - /g/data/ik11/inputs/access-om2/input_20201102/mom_025deg
       ncpus: 1455
 
     - name: ice
       model: cice5
-      exe: /g/data/ik11/inputs/access-om2/bin/cice_auscom_1440x1080_480p_2572851_libaccessom2_a227a61.exe
-      input: /g/data/ik11/inputs/access-om2/input_20201102/cice_025deg
+      exe: /home/581/hh0162/scratch/access-om2-iamip2/bin/cice_auscom_1440x1080_480p_4b8cf04-modified_libaccessom2_44e8821-modified.exe
+      #/g/data/v45/hh0162/projects/icebgc/prep_omip2/input_om2-bgc/025deg-paul/cice_auscom_1440x1080_480p_4b8cf04-modified_libaccessom2_44e8821-modified.exe
+      input: 
+      - /g/data/v45/hh0162/projects/icebgc/prep_omip2/input_om2-bgc/025deg-paul
+      - /g/data/ik11/inputs/access-om2/input_20201102/cice_025deg
       ncpus: 361
 
 # Collation

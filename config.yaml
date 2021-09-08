@@ -9,7 +9,7 @@
 # shortpath: /scratch/v45
 
 queue: normal
-walltime: 0:03:00
+walltime: 0:01:00
 jobname: 025deg_jra55_ryf
 storage:
         gdata: v45
@@ -28,8 +28,8 @@ submodels:
 
     - name: ocean
       model: mom
-      exe: /home/581/hh0162/scratch/access-om2-iamip2/src/mom/exec/nci/ACCESS-OM-BGC/fms_ACCESS-OM-BGC.x
-      #/g/data/v45/hh0162/projects/icebgc/prep_omip2/input_om2-bgc/025deg-paul/fms_ACCESS-OM-BGC.x
+      #exe: /home/581/hh0162/scratch/access-om2-iamip2/src/mom/exec/nci/ACCESS-OM-BGC/fms_ACCESS-OM-BGC.x
+      exe: /g/data/v45/hh0162/projects/icebgc/prep_omip2/input_om2-bgc/025deg-paul/fms_ACCESS-OM-BGC.x
       input: 
       - /g/data/v45/hh0162/projects/icebgc/prep_omip2/input_om2-bgc/025deg-paul
       - /g/data/ik11/inputs/access-om2/input_20201102/mom_025deg
@@ -37,8 +37,8 @@ submodels:
 
     - name: ice
       model: cice5
-      exe: /home/581/hh0162/scratch/access-om2-iamip2/bin/cice_auscom_1440x1080_480p_4b8cf04-modified_libaccessom2_44e8821-modified.exe
-      #/g/data/v45/hh0162/projects/icebgc/prep_omip2/input_om2-bgc/025deg-paul/cice_auscom_1440x1080_480p_4b8cf04-modified_libaccessom2_44e8821-modified.exe
+      #exe: /home/581/hh0162/scratch/access-om2-iamip2/bin/cice_auscom_1440x1080_480p_4b8cf04-modified_libaccessom2_44e8821-modified.exe
+      exe: /g/data/v45/hh0162/projects/icebgc/prep_omip2/input_om2-bgc/025deg-paul/cice_auscom_1440x1080_480p_4b8cf04-modified_libaccessom2_44e8821-modified.exe
       input: 
       - /g/data/v45/hh0162/projects/icebgc/prep_omip2/input_om2-bgc/025deg-paul
       - /g/data/ik11/inputs/access-om2/input_20201102/cice_025deg
